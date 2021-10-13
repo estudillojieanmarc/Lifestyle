@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+    box-sizing: border-box;
+}
+ion-header{
+    display: flex;
+    background: #6d9886;
+    color: #f6f6f6;
+    padding: 0.6rem;
+    a{
+        text-decoration: none;
+        color: #f6f6f6;
+    }
+    .left{
+        margin-right:3.7rem;
+    }
+    p{
+        padding-top: 7px;
+        margin-right: 3rem;
+    }
+    ion-icon{
+        margin: 0rem;
+        font-size: 1.7rem;
+    }
+}
+    ion-content {
+    --background: #f6f6f6;
+    --color: #212121;
+    ion-card{
+        --background: #f6f6f6;
+        --color: #212121;
+        ion-segment{
+            ion-label{
+                color: #212121;
+                font-size: 13px;
+                border-bottom: 1px solid #212121;
+            }
+        }
+    }
+    ion-searchbar{
+        margin: 1rem 1rem 0 2.3rem;
+        width: 80%;
+        padding-top: 1rem;
+        --background: #f6f6f6;
+        --color: #212121;
+    }
+    ion-button{
+        margin: 1rem 10px;
+        min-width: 120px;
+        --background:#6d9886;
+    }
+    h3{
+        margin: 1rem 0 7px 0rem;
+        font-size: 16px;
+        span{
+            font-size: 12px;
+            margin-left: 0.5rem;
+            color: #000000;
+        ion-icon{
+            margin-left: 13rem;
+            font-size: 15px;
+        }
+        }
+    }
+    ion-card {
+        width: 100%;
+        height: 140px;
+        box-shadow: none;
+        border-radius: 12px;
+        img {
+            object-fit: cover;
+            width: 100%;
+            transform: scale(1.1, 1.1) rotate(1deg);
+            transition: 600ms all ease-in-out;
+        }
+    }
+    .swiper-slide-active {
+        transform: scale(1.05, 1.05);
+        ion-card {
+            img {
+                transform: scale(1, 1);
+            }
+        }
+    }
+    .swiper-slide {
+        transition: 400ms all ease-in-out;
+    }
+
+    .card{
+        padding: 1rem 0;
+        height: 22rem;
+        margin: 0 0 1rem 0;
+    h3{
+        font-size: 18px;
+        margin-left: 1rem;
+    span{
+        margin-left: 15rem;
+        font-size: 17px;
+    }
+    }
+      --background:#f6f6f6;
+      --color:#212121;
+    ion-item{
+    --background:#f6f6f6;
+    --color:#212121;
+    ion-badge{
+        padding: 5px;
+        background-color: #f6f6f6;
+        color: #212121;
+        font-weight: 400;
+    }
+    }  
+  }
+}

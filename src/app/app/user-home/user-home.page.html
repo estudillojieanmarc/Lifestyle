@@ -1,0 +1,108 @@
+<ion-header>
+  <a href="" class="left"><ion-icon  name="menu-outline"></ion-icon></a>
+  <p>Tindahan ni Aling Nena</p>
+    <ion-icon name="cart-outline"></ion-icon>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-segment (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="Meat">
+        <ion-label>Meat</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Veggies">
+        <ion-label>Veggies</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Desert">
+        <ion-label>Desert</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <ion-searchbar color="dark" placeholder="What's your order?"></ion-searchbar> 
+    <!-- <ion-button expand="round">Reserve</ion-button>
+      <ion-button expand="round">Order</ion-button> -->
+    </ion-card>
+    <h3><span>ORDER-EAT-SATISFY <ion-icon name="restaurant-outline"></ion-icon></span></h3>
+    <ion-slides [options]="option" class="ion-margin-top">
+    <ion-slide>
+      <ion-card>
+        <img src="/assets/biko.jpg">
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="/assets/maja.jpg">
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="/assets/macaroni.jpg">
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="/assets/spaghetti.jpg">
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <img src="/assets/carbonara.jpg">
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-card class="card">
+    <h3>Menu<span>Price</span></h3>
+    <ion-list>
+
+      <ion-item-sliding>
+        <ion-item>
+          <ion-label>Spaghetti</ion-label>
+            <ion-badge color="success" slot="end">₱200</ion-badge>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option (click)="unread(item)">Order</ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    
+      <ion-item-sliding>
+        <ion-item>
+          <ion-label>Carbonara</ion-label>
+            <ion-badge color="success" slot="end">₱250</ion-badge>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option (click)="unread(item)">Order</ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+ 
+      <ion-item-sliding>
+        <ion-item>
+          <ion-label>Pansit Bihon</ion-label>
+            <ion-badge color="success" slot="end">₱180</ion-badge>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option (click)="unread(item)">Order</ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+      
+      <ion-item-sliding>
+        <ion-item>
+          <ion-label>Pansit Canton</ion-label>
+            <ion-badge color="success" slot="end">₱220</ion-badge>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option (click)="unread(item)">Order</ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+
+      <ion-item-sliding>
+        <ion-item>
+          <ion-label>Pansit Palabok</ion-label>
+            <ion-badge slot="end">₱240</ion-badge>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option (click)="unread(item)">Order</ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </ion-card>

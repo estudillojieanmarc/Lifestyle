@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;800&display=swap');
+  
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+    box-sizing: border-box;
+}
+  ion-toolbar {
+    --background: #fff;
+    ion-title {
+      padding: 20px 0 46px 0;
+      font-weight: 900;
+    }
+  }
+  ion-content {
+    --background: #6d9886;
+     
+    .user{
+        margin: 7rem 0 0 7.9rem;
+        font-size: 100px;
+        border: none;
+        padding: 8px;
+        border-radius: 50%;
+    }
+    h1 {
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      margin-top: 0.3rem;
+      font-size: 2rem;
+      color: #f6f6f6;
+      letter-spacing: 2px;
+    }
+    p {
+      justify-content: center;
+      text-align: center;
+      color: #f6f6f6;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      margin: 0.8rem 1rem;
+    }
+    .container-form-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.3rem;
+    }
+    .form-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight:600;
+      min-width: 120px;
+      font-size: 14px;
+      color: #212121;
+      margin: 5px 4px;
+      outline: none;
+      text-transform: uppercase;
+      transition: all 0.5s;
+    }
+    .socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+    }
+    ion-icon{
+        margin: 0 10px;
+        font-size: 20px;
+        border: 1px solid #f6f6f6 ;
+        padding: 8px;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+    ion-icon:hover{
+        background-color: #212121;
+        color: #f6f6f6;
+        border: #212121 1px solid;
+        transform: translateY(10px);
+    }
+    .custom-shape-divider-top-1634059742 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1634059742 svg {
+        position: relative;
+        display: block;
+        width: calc(110%);
+        height: 130px;
+    }
+    
+    .custom-shape-divider-top-1634059742 .shape-fill {
+        fill: #F6F6F6;
+    }
+    .custom-shape-divider-bottom-1634059852 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    .custom-shape-divider-bottom-1634059852 svg {
+        position: relative;
+        display: block;
+        width: calc(102%);
+        height: 122px;
+    }
+    
+    .custom-shape-divider-bottom-1634059852 .shape-fill {
+        fill: #F6F6F6;
+    }
+  }
+  
